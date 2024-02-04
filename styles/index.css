@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* The Header section */
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+header > a > img{
+    width: 50px;
+    margin: 5px;
+    height: 50px;
+    
+}
+
+header > nav, header div {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+header > nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:700; 
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #039149;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #039149;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* General styles */
+.container {
+    width: 95%;
+   margin: auto;
+     
+}
+
+.bgpics{
+    background-image: url("../assets/images/headerBg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 35px;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+
+/* Main section */
+.main {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main h1{
+    font-size: 80px;
+    color: #039149;
+    padding-bottom: 0px;
+}
+
+/* Search section */
+.search > form {
+    text-align: center;
+}
+
+#search{
+    padding: 25px;
+    width: 800px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+/* Project showcase */
+
+
+.projectShowMain h2{
+    color: #033010;
+    border: 1px inset #ddd;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.projectShowcase{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    
+}
+
+.projectShowcase > section {
+    flex-basis: 24%; 
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    /* height: 300px; */
+    /* margin: 10px 0; */
+}
+
+.projectShowcase > section img {
+    width:100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.projectShowcase > section p {
+    padding: 0 5px;
+    font-weight: 600;
+}
+
+.projectShowcase > section span a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 0 4px 10px;
+}
+
+/* About Section */
+
+.aboutSec {
+    text-align: center;
+    color: #fff;
+    background-color: #039149;
+    padding: 20px 0;
+    border-radius: 15px;
+    
+}
+
+.aboutSec h3 {
+    font-size: 40px;
+
+}
+
+.aboutSec p{
+    text-wrap: wrap;
+    padding: 0 10%;
+}
+
+/* Newsletter section */
+
+.newsletter {
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+   
+}
+
+.newsletter input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Footer Section */
+
+footer {
+    color: #fff;
+    background-color: #049e51;
+    margin-top: 10px;
+}
+
+.ftflex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 96%;
+}
+
+.ftflex > div {
+    margin-top: 18px;
+}
