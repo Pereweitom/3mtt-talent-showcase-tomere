@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    height: 200px;
+}
+.profContainer{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #F9F9F9;
+    
+}
+
+.profInfo{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ddd;
+    max-height: 800px;
+    width: 1000px;
+    position: relative;
+    top: -80px;
+    margin-left: 20px;
+    
+   
+}
+
+.profInfo h3{
+    text-align: center;
+    margin: 0;
+    padding: 2;
+}
+
+.imgContainer {
+    text-align: center;
+    /* position: relative;
+    padding-bottom: 90px; */
+}
+
+.profInfo span, .profInfo a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 0;
+}
+
+.profInfo a {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color: #039149;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+
+.profInfo img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    /* position: absolute;
+    top: -65px;
+    left: 95px; */
+    width: 150px;
+    
+}
+
+.projects > section {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+.projects {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+
+li{
+    list-style-type: none;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+    padding:3px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+            
+}
+
+ul > h4 {
+    border-bottom: 1px solid #ddd;
+    margin: 0;  
+    padding: 8px 0;
+}
+
+ul :last-child{
+    border-bottom: none;
+}
+
+.profActNav{
+    padding: 15px 0;
+}
+
+.profActs a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    border-radius: 40px;
+    margin: 5px;
+    
+}
+
+a.currentAct{
+    background-color: #039149;
+    color: #fff;
+}
+
+a.currentAct:hover{
+    color: #039149;
+    background-color: #fff;
+}
+
+.profActs a:hover{
+    color: #039149;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+}

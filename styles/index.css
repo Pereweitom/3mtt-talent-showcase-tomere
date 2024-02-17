@@ -29,7 +29,7 @@ header > nav, header div {
 
 header > nav a {
     text-decoration: none;
-    color: #fff;
+    color: #049e51;
     padding: 10px;
     font-size: 1rem;
     font-weight:600; 
@@ -62,14 +62,14 @@ header > nav a {
      
 }
 
-.bgpics{
+/* .bgpics{
     background-image: url("../assets/images/headerBg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 35px;
     border-radius: 0 0 20px 20px;
     
-}
+} */
 
 
 /* Main section */
@@ -80,7 +80,7 @@ header > nav a {
 }
 
 .main h1{
-    font-size: 80px;
+    font-size: 3rem;
     color: #039149;
     padding-bottom: 0px;
 }
@@ -102,13 +102,13 @@ header > nav a {
 /* Project showcase */
 
 
-.projectShowMain h2{
+/* .projectShowMain h2{
     color: #033010;
     border: 1px inset #ddd;
     width: fit-content;
     padding: 5px;
     border-radius: 10px;
-}
+} */
 
 .projectShowcase{
     display: flex;
