@@ -1,49 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3MTT Fellow showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
+
 <body>
-    <header class="container">
-        <a href="./"><img src="./assets/images/3mttLogo.png" alt=""></a>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Hire</a>
-            <a href="">Job</a>      
-            <a href="" class="btn">Join</a>
-            <a href="" class="btn">Login</a>
-        </nav>
-    </header>
-    <section>
-
-    </section>
-    <section>
-        <section class="profHire">
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <img src="" alt="">
-            <h3>Fellow Name</h3>
-            <a href="">Featured</a>
-            <a href="">Project completed</a>
-        </section>
-    </section>
-
-
-    <footer>
-        <div class="ftflex">
-            <p>&copy; Tomere FE2353253</p>
-            <div>
-                <a href=""><img src="" alt="."></a>
-                <a href=""><img src="" alt="."></a>
-                <a href=""><img src="" alt="."></a>
-            </div>
+    <div class="bgpics">
+     
+        <header class="container">
+            <a href="./"><img src="./assets/images/3mttLogo.png" alt=""></a>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./hire.html">Hire</a>
+                <!-- <a href="">Job</a>       -->
+                <a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a>
+                <a href="./loginpage.html" class="btn">Login</a>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>Hire Creative Talents</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nisi laborum veniam enim consequuntur quod sapiente dolore adipisci velit odio!</p>
+        </main>
+       
         </div>
-        
-    </footer>
+        <div class="container projectShowMain">
+            <!-- <h2>Software Engineering Projects</h2> -->
+            <section class="filter">
+                <div>
+                    <a href="" class="currentFilter">All</a>
+                    <a href="">Services</a>
+                    <a href="">Full-time</a>
+                    <a href="">Freelance</a>
+                </div>
+                <h4><i class="fas fa-credit-card"></i> Payment</h4>
+                <div class="creativeFields">
+
+                </div>
+
+                <h4><img src="./assets/images/avail-icon.png" alt=""> Availability</h4>
+                <div class="availFellow">
+
+                </div>
+                <h4><img src="./assets/images/location-icon.png" alt=""> Location</h4>
+                <form >
+                    <fieldset>
+                        <legend>City</legend>
+                        <input type="text">
+                    </fieldset>
+                </form>
+
+
+            </section>
+            <section class="showcaseContainer">
+                <section class="search">
+                    <form action="">
+                        <div class="searchContainer">
+                            <i class="fas fa-search"></i>
+                            <input type="search" placeholder="Search for creative talents" id="search" list="items">
+                            <datalist id="items">
+                                <option value="Software Engineering"></option>
+                                <option value="Ui/UX"></option>
+                                <option value="Cyber security"></option>
+                                <option value="Data science"></option>
+                                <option value="Graphics design"></option>
+                            </datalist>
+                        </div>
+                        <div class="fieldset">
+                            <fieldset>
+                                <legend>sort</legend>
+                                <input type="text" placeholder="Recommended">
+                            </fieldset>
+                        </div>
+                        
+                    </form>
+                </section>
+                <div class="hireFellow">
+                    <section>
+                        <div >
+                            <img src="./assets/images/showOne.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show6.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show2.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show3.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show4.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/showOne.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show6.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show7.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show2.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show5.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    <section>
+                        <div >
+                            <img src="./assets/images/show4.jpg" alt="">
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/Tomere.jpg" alt="" class="avatar">
+                        </div>
+                        
+                        <p>Tomere Perewei</p>
+                        <span><a href="./fellowprofile.html">Tomere FE1234567</a></span>
+                        <a href="" class="hire">Hire</a> 
+                    </section>
+                    
+                </div>
+           </section> 
+        </div>
+            
+       
+        <footer>
+            <div class="ftflex">
+                <p>&copy; Tomere FE2353253</p>
+                <div>
+                    <a href=""><i class="fab fa-github fa-2x"></i></a>
+                    <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            
+        </footer>
+
 </body>
+
 </html>
