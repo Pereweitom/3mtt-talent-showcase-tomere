@@ -1,3 +1,14 @@
+function showSideBar(){
+    const sidebar = document.querySelector('.sideBar')
+    sidebar.style.display = 'flex'
+}
+
+function closeSideBar(){
+    const sidebar = document.querySelector('.sideBar')
+    sidebar.style.display = 'none'
+}
+// Client Side validation for login page
+
 function id(id) {
     return document.getElementById(id);
 }
@@ -48,3 +59,4 @@ let engine = (field, serial, message) => {
         
       }
 }
+

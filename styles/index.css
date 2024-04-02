@@ -6,28 +6,54 @@ html {
     font-family: "roboto", sans-serif;
     margin: 0;
     padding: 0;
+
+}
+
+body *{
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /* The Header section */
 header{
     height: 60px;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #ddd;
     background-color: rgba(255,255,255, 0.6);
 }
 
-header > a > img{
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #fff;
+}
+
+nav li:first-child a > img{
     width: 50px;
-    margin: 5px;
     height: 45px;
+    
     
 }
 
-header > nav, header div {
-    display: inline-block;
-    margin-top: 25px;
+nav li:first-child{
+    margin-right: auto;
 }
+
 
 header > nav a {
     text-decoration: none;
@@ -37,6 +63,35 @@ header > nav a {
     font-weight:600; 
 }
 
+
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sideBar li {
+    width: 100%;
+}
+
+.sideBar a {
+    /* width: 100%; */
+}
+
+.sideBar li:last-child{ 
+    margin-top: 8px;
+}
+
 .btn {
     text-decoration: none;
     background-color: #039149;
@@ -44,7 +99,25 @@ header > nav a {
     padding: 8px 20px;
     border-radius: 25px;
     font-size: 1rem;
-    margin: 0 5px;
+    margin:  5px;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media  screen and (max-width: 480px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .sideBar {
+        width: 100%;
+    }
+
+    .menu-button{
+        display: block;
+    }
 }
 
 /* .btn:hover {
@@ -96,6 +169,17 @@ header > nav a {
     font-size: .9rem;
 }
 
+
+@media screen and (max-width: 480px) {
+.main {
+    padding: 15px;
+}
+
+   .main h1 {
+    font-size: 2.1rem;
+   }
+}
+
 /* Search section */
 .search > form {
     text-align: center;
@@ -141,6 +225,20 @@ fieldset > input {
 fieldset > legend {
     font-size: .7rem;
 }
+ 
+@media screen and (max-width: 480px) {
+    .fieldset {
+        width: 30%;
+    }
+
+    .fieldset fieldset input{
+        width: 100%;
+    }
+
+    .searchContainer {
+        width: 70%;
+    }
+}
 
 /* Project showcase */
 
@@ -152,7 +250,15 @@ fieldset > legend {
     padding: 0;
 }
 
-    /* Filter section */
+@media screen and (max-width : 480px) {
+    .projectShowMain {
+        display: block;
+    }
+}
+
+/*
+    Filter section 
+    */
 .filter {
     width: 25%;
     border-right: 1px solid #ccc;
@@ -186,6 +292,29 @@ a.currentFilter{
     position: relative;
     top: 4px;
 }
+
+.filter li {
+    padding: 3px 0;
+    list-style-type: none;
+}
+
+.creative-field{
+    display: none;
+}
+
+.creativeFields:hover .creative-field{
+    display: block;
+}
+
+@media screen and (max-width : 480px) {
+    .filter{
+        display: none;
+    }
+
+
+}
+
+/* Project showcase section */
 
 .showcaseContainer{
     flex-basis: 70%;
@@ -234,6 +363,18 @@ a.currentFilter{
     font-size: .9rem;
     padding: 5px 5px;
     color: grey;
+}
+
+.projectShowcase > section > div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .projectShowcase > section {
+        width: 100%;
+    }
 }
 
 /* About Section */
@@ -338,10 +479,10 @@ The login Page Section
 }
 
 .illustration{
-    background-color: #F2796E;
+    background-color: #03ad58;
     box-shadow: 2px 2px 2px 2px #ddd;
     padding: 25px;
-    /* width: 50%; */
+    /* width: 50%; #F2796E*/
 }
 
 .illustration img{
@@ -364,6 +505,12 @@ form > div{
     color: red;
     text-align: right;
     font-size: 14px;
+ }
+
+ @media screen and (max-width: 480px) {
+    .illustration{
+        display: none;
+    }
  }
 
 
@@ -445,6 +592,17 @@ form > div{
     background-color: #039149;
     display: block;
 
+}
+
+@media screen and (max-width : 480px) {
+    .hireFellow .avatar {
+        position: absolute;
+        border-radius: 50%;
+        width: 145px;
+        top: -100px;
+        left: 100px;
+        border: 3px dotted #ccc;    
+    } 
 }
 /*============================== 
 Footer Section 

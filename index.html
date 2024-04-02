@@ -18,19 +18,35 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     crossorigin="anonymous"
   />
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <div class="bgpics">
      
-        <header class="container">
-            <a href="./"><img src="./assets/images/3mttLogo.png" alt=""></a>
+        <header>
+            
             <nav>
-                <a href="">Home</a>
-                <a href="./hire.html">Hire</a>
-                <!-- <a href="">Job</a>       -->
-                <a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a>
-                <a href="./loginpage.html" class="btn">Login</a>
+
+                 
+                <ul class="sideBar">
+                    <li onclick= closeSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./hire.html">Hire</a></li>
+                    <li><a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a></li>
+                    <li><a href="./loginpage.html" class="btn">Login</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a href="./"><img src="./assets/images/3mttLogo.png" alt=""></a></li>
+                    <li class="hideOnMobile"><a href="">Home</a></li>
+                    <li class="hideOnMobile"><a href="./hire.html">Hire</a></li>
+                    <li class="hideOnMobile"><a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a></li>
+                    <li class="hideOnMobile"><a href="./loginpage.html" class="btn">Login</a></li>
+                    <li class="menu-button" onclick= showSideBar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+               
+               
             </nav>
         </header>
         <main class="main">
@@ -42,16 +58,25 @@
         <div class="container projectShowMain">
             <!-- <h2>Software Engineering Projects</h2> -->
             <section class="filter">
-                <h4> <img src="./assets/images/filter-icon.png" alt=""> Filter</h4>
+                <h4 class="filterShow"> <img src="./assets/images/filter-icon.png" alt="" > Filter</h4>
                 <div>
                     <a href="" class="currentFilter">Projects</a>
                     <a href="">Assets</a>
                     <a href="">Images</a>
                     <a href="">Fellows</a>
                 </div>
-                <h4><img src="./assets/images/creatives.png" alt=""> Creative Fields</h4>
+                
                 <div class="creativeFields">
-
+                    <h4><img src="./assets/images/creatives.png" alt=""> Creative Fields</h4>
+                    <ul class="creative-field">
+                        <li>Software Development</li>
+                        <li>Data Analysis</li>
+                        <li>UI/UX</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Graphics Design</li>
+                        <li>Cloud Computing</li>
+                        <li>Machine Learning</li>
+                    </ul>
                 </div>
 
                 <h4><img src="./assets/images/avail-icon.png" alt=""> Availability</h4>
@@ -104,32 +129,32 @@
                     </section>
                     <section>
                         <img src="./assets/images/show6.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem ipsum dolor</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/showOne.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem ipsum dolor.</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/show5.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem adipisicing.</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/show4.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/show2.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem ipsum dolor sit amet</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/show2.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <p>Lorem sit amet</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
@@ -139,12 +164,12 @@
                     </section>
                     <section>
                         <img src="./assets/images/show4.jpg" alt="">
-                        <p>Lorem ipsum dolor, consectetur adipisicing.</p>
+                        <p>Lorem consectetur adipisicing.</p>
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>
                         <img src="./assets/images/show6.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <div><p>Lorem adipisicing.</p>  <span><i>like </i> <i>view </i></span></div> 
                         <span><a href="">Tomere FE1234567</a></span>
                     </section>
                     <section>

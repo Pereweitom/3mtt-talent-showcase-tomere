@@ -48,8 +48,6 @@ main:hover {
 
 .imgContainer {
     text-align: center;
-    /* position: relative;
-    padding-bottom: 90px; */
 }
 
 .profInfo span, .profInfo a{
@@ -76,12 +74,39 @@ main:hover {
 .profInfo img{
     border-radius: 50%;
     border: 5px solid #fff;
-    /* position: absolute;
-    top: -65px;
-    left: 95px; */
     width: 150px;
     
 }
+
+.cohort, .report {
+    display: block;
+    text-align: center;
+    color: #586458;
+}
+
+
+@media screen and (max-width : 480px) {
+    .profContainer {
+        display: block;
+    }
+
+    .profInfo{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px #ddd;
+        max-height: fit-content;
+        width: 100%;
+        position: relative;
+        top: -100px;
+        margin-left: 0;
+        
+       
+    }
+}
+
+/* Project and works section */
 
 .projects > section {
     width: 400px;
@@ -98,7 +123,7 @@ main:hover {
 }
 
 .projects > section:hover{
-    border: 3px solid #ddd;
+    box-shadow: 0 4px 6px #ddd, 0 6px 8px rgba(0, 0, 0, .3);
 }
 
 .projects {

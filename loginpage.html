@@ -21,15 +21,30 @@
   </head>
 
   <body>
-    <header class="container">
-      <a href="./"><img src="./assets/images/3mttLogo.png" alt="" /></a>
+    <header>
+            
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./hire.html">Hire</a>
-        <!-- <a href="">Job</a>       -->
-        <a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a>
-        <a href="" class="btn">Login</a>
-      </nav>
+
+           
+          <ul class="sideBar">
+              <li onclick= closeSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./hire.html">Hire</a></li>
+              <li><a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a></li>
+              <li><a href="./loginpage.html" class="btn">Login</a></li>
+              
+          </ul>
+          <ul>
+              <li><a href="./"><img src="./assets/images/3mttLogo.png" alt=""></a></li>
+              <li class="hideOnMobile"><a href="">Home</a></li>
+              <li class="hideOnMobile"><a href="./hire.html">Hire</a></li>
+              <li class="hideOnMobile"><a href="https://fellow.3mtt.training/" target="_blank" class="btn btnTrans">Join</a></li>
+              <li class="hideOnMobile"><a href="./loginpage.html" class="btn">Login</a></li>
+              <li class="menu-button" onclick= showSideBar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+         
+         
+        </nav>
     </header>
     <div class="loginBg">
 
